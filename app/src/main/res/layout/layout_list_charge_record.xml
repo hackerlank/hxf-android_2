@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_white_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/layout_list_charge_record_name"
+        android:layout_margin="@dimen/px_20"
+        android:textColor="@color/black_333_text"
+        android:text="微信支付"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/px_10"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/layout_list_charge_record_time"
+            android:layout_margin="@dimen/px_10"
+            android:textColor="@color/black_333_text"
+            android:text="2016-03-24 17:47:26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/layout_list_charge_record_count"
+            android:layout_margin="@dimen/px_10"
+            android:textColor="@color/join_red"
+            android:layout_alignParentRight="true"
+            android:text="50元"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/layout_list_charge_record_status"
+        android:layout_margin="@dimen/px_20"
+        android:textColor="@color/black_333_text"
+        android:layout_alignParentRight="true"
+        android:text="已支付"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

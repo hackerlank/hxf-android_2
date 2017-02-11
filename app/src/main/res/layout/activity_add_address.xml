@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <include layout="@layout/title_bar2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_80">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_100"
+                android:layout_marginLeft="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="收"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_12"
+                    android:text="货"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_12"
+                    android:text="人"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="14sp" />
+
+                <com.goodhappiness.widget.ClearEditText
+                    android:id="@+id/add_address_receiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:background="@color/white"
+                    android:hint="@string/receiver_name"
+                    android:paddingRight="@dimen/px_20"
+                    android:textColor="@color/black_333_text"
+                    android:textColorHighlight="@color/gray_999_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="@dimen/px_20"
+                android:background="@color/d_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_100"
+                android:layout_marginLeft="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/mobile_num"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="14sp" />
+
+                <com.goodhappiness.widget.ClearEditText
+                    android:id="@+id/add_address_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:background="@color/white"
+                    android:hint="@string/mobile_num"
+                    android:inputType="number"
+                    android:paddingRight="@dimen/px_20"
+                    android:textColor="@color/black_333_text"
+                    android:textColorHighlight="@color/gray_999_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="@dimen/px_20"
+                android:background="@color/d_line" />
+
+            <LinearLayout
+                android:id="@+id/add_address_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_100"
+                android:layout_marginLeft="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="省"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_12"
+                    android:text="市"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_12"
+                    android:text="区"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/add_address_district"
+                    android:layout_width="@dimen/px_480"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:background="@color/white"
+                    android:text="@string/please_choose"
+                    android:textColor="@color/gray_999_text"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/px_12"
+                    android:layout_height="@dimen/px_22"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/px_30"
+                    android:src="@mipmap/next" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="@dimen/px_20"
+                android:background="@color/d_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_200"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:gravity="top"
+                    android:paddingTop="@dimen/px_38"
+                    android:text="@string/detail_address"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="14sp" />
+
+                <com.goodhappiness.widget.ClearEditText
+                    android:id="@+id/add_address_detail_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="@string/input_address"
+                    android:paddingRight="@dimen/px_20"
+                    android:paddingTop="@dimen/px_38"
+                    android:textColor="@color/black_333_text"
+                    android:textColorHighlight="@color/gray_999_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginLeft="@dimen/px_20"
+                android:background="@color/d_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:text="@string/setting_default_address"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="14sp" />
+
+                <com.goodhappiness.widget.UISwitchButton
+                    android:id="@+id/add_address_sb"
+                    app:bmWidth="@dimen/px_100"
+                    app:bmHeight="@dimen/px_40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/px_20" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/d_line" />
+
+            <LinearLayout
+                android:id="@+id/add_address_ll_delete"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_white_bg"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100"
+                    android:background="@color/e_bg"/>
+                <TextView
+                    android:id="@+id/add_address_tv_delete"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/px_20"
+                    android:textColor="@color/order_red"
+                    android:text="@string/delete_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/d_line"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

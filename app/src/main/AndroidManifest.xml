@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goodhappiness">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 请求访问使用照相设备 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 开启闪光灯权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 允许访问GPS -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:name=".GoodHappinessApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.HomepageActivity"
+            android:configChanges="fontScale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.social.im.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.goodhappiness"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <!-- 聚合会话列表 -->
+        <activity
+            android:name=".ui.social.im.SubConversationListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.goodhappiness"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.social.im.ConversationListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.goodhappiness"
+                    android:pathPrefix="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.social.FriendActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.personal.selecthead.PhotoPickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.order.InventoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.lottery.LotteryDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.StartActivity" />
+        <activity android:name=".ui.social.FlowerActivity" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <receiver
+            android:name=".AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- ___________________友盟________________________________ -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <!--
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+        <service android:name=".service.DownloadService" />
+        <service android:name=".service.RunService" />
+        <service android:name=".service.ListenNetStateService" />
+        <service
+            android:name="io.rong.imlib.ipc.RongService"
+            android:process=":ipc" />
+        <service android:name="io.rong.imlib.ReConnectService" />
+
+        <receiver android:name="io.rong.imlib.ConnectChangeReceiver" />
+        <receiver
+            android:name="io.rong.imlib.HeartbeatReceiver"
+            android:process=":ipc" />
+        <receiver android:name=".receiver.PushReciver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.example.service_destory" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105418356" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- ###################添加UmengAppkey###################### -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="574682c7e0f55a44630004bd" />
+        <meta-data
+            android:name="com.goodhappiness.utils.GlideConfigModule"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="puduo" />
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="82hegw5uhuetx" />
+        <!--android:value="e0x9wycfxf9kq" />-->
+
+        <activity
+            android:name="org.lasque.tusdk.impl.activity.TuFragmentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.lottery.LotteryNumberActivity" />
+        <activity android:name=".NewWebViewActivity" />
+        <activity
+            android:name=".ui.WebViewActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".ui.social.picture.PreviewImageBaseActivity" />
+        <activity android:name=".ui.order.ConfirmOrderActivity" />
+        <activity android:name=".ui.order.PayOrderActivity" />
+        <activity android:name=".ui.order.PayResultActivity" />
+        <activity android:name=".ui.order.RedbagActivity" />
+
+        <service
+            android:name=".service.UploadDeviceMsgService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ui.personal.selecthead.ShowHeadImgActivity" />
+        <activity android:name=".ui.social.ReportActivity" />
+        <activity android:name=".ui.personal.selecthead.ShowImageStep2Activity" />
+        <activity android:name=".ui.personal.ChargeActivity" />
+        <activity android:name=".ui.lottery.LotteryRecordActivity" />
+        <activity
+            android:name=".ui.personal.ChargeResultActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ui.register.RegisterStepOneActivity" />
+        <activity android:name=".ui.register.RegisterStepTwoActivity" />
+        <activity android:name=".ui.register.RegisterStepThreeActivity" />
+        <activity
+            android:name=".ui.register.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.personal.ChargeRecordActivity" />
+        <activity android:name=".ui.personal.WinRecordActivity" />
+        <activity android:name=".wxapi.ShowFromWXActivity" />
+        <activity android:name=".ui.personal.PersonalDataActivity" />
+        <activity android:name=".ui.personal.ExchangeRecordActivity" />
+        <activity android:name=".ui.order.MsgConfirmActivity" />
+        <activity android:name=".ui.personal.UpdateUserInformationActivity" />
+        <activity android:name=".ui.personal.AddressListActivity" />
+        <activity android:name=".ui.personal.AddAddressActivity" />
+        <activity android:name=".ui.personal.VerifyMobileActivity" />
+        <activity android:name=".ui.lottery.LotteryRecordDetailActivity" />
+        <activity android:name=".ui.lottery.LotteryCodeActivity" />
+        <activity
+            android:name=".ui.social.SocialDetailActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.social.picture.EditPicActivity" />
+        <activity android:name=".ui.social.picture.PublishActivity" />
+        <activity
+            android:name=".ui.social.PersonActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".ui.social.picture.CommentToMeActivity" />
+        <activity android:name=".ui.social.LikeMeActivity" />
+        <activity android:name=".ui.social.picture.EditPicUpdateActivity" />
+        <activity android:name=".ui.social.picture.PreviewActivity" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity android:name=".ui.personal.SettingActivity" />
+        <activity android:name=".ui.personal.AboutUsActivity" />
+
+        <receiver
+            android:name=".receiver.RongIMNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".ui.social.im.PushMsgActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.goodhappiness"
+                    android:pathPrefix="/push_message"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.social.FlowerRankActivity" />
+
+        <activity android:name=".ui.order.RedbagListActivity" />
+        <activity android:name=".ui.social.picture.AddTagActivity" />
+        <activity android:name=".ui.social.video.VideoRecordActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.social.video.VideoPublishActivity" />
+        <activity android:name=".ui.social.video.VideoListActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".ui.social.video.VideoActivity" />
+        <activity android:name=".ui.social.picture.DisplayImgActivity" />
+        <activity android:name=".ui.social.SearchActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity android:name=".ui.social.ChannelActivity" />
+        <activity android:name=".ui.social.picture.EditPicV5Activity"></activity>
+        <!-- ⼩米 配置开始 < -->
+        <permission
+            android:name="com.goodhappiness.permission.MIPUSH_RECEIVE"
+            android:protectionLevel="signature" />
+        <uses-permission android:name="com.goodhappiness.permission.MIPUSH_RECEIVE" />
+        <!-- 小米 配置开始 < -->
+        <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" />
+        <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true" />
+        <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true" />
+        <!--注：此service必须在2.2.5版本以后（包括2.2.5版本）加入-->
+
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="io.rong.push.platform.MiMessageReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <!-- 小米 配置结束 < -->
+        <!-- 华为 配置开始 < -->
+        <receiver android:name="com.huawei.android.pushagent.PushEventReceiver" android:process=":hwpushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REFRESH_PUSH_CHANNEL" />
+                <action android:name="com.huawei.intent.action.PUSH" />
+                <action android:name="com.huawei.intent.action.PUSH_ON" />
+                <action android:name="com.huawei.android.push.PLUGIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.android.pushagent.PushBootReceiver" android:process=":hwpushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTER" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <meta-data android:name="CS_cloud_version" android:value="\u0032\u0037\u0030\u0035" />
+        </receiver>
+        <receiver android:name="io.rong.push.platform.HWReceiver">
+            <intent-filter>
+                <!-- 必须,用于接收token-->
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <!-- 必须，用于接收消息-->
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+                <!-- 可选，用于点击通知栏或通知栏上的按钮后触发onEvent回调-->
+                <action android:name="com.huawei.android.push.intent.CLICK" />
+                <!-- 可选，查看push通道是否连接，不查看则不需要-->
+                <action android:name="com.huawei.intent.action.PUSH_STATE" />
+                <!-- 可选，标签、地理位置上报回应，不上报则不需要 -->
+                <action android:name="com.huawei.android.push.plugin.RESPONSE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.huawei.android.pushagent.PushService" android:process=":hwpushservice"></service>
+        <!-- 华为 配置结束 < -->
+    </application>
+
+</manifest>

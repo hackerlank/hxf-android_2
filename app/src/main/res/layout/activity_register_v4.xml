@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/title_bar2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_80">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/register_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_adv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.goodhappiness.widget.ClearEditText
+                android:paddingRight="@dimen/px_20"
+                android:inputType="number"
+                android:id="@+id/register_mobile_num"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_marginTop="@dimen/px_20"
+                android:background="@mipmap/bg_kk1"
+                android:gravity="center_vertical|left"
+                android:hint="@string/mobile_num"
+                android:paddingLeft="@dimen/px_20"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_marginTop="@dimen/px_20"
+                android:background="@mipmap/bg_kk1"
+                android:orientation="horizontal">
+
+                <com.goodhappiness.widget.ClearEditText
+                    android:id="@+id/register_psw"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_90"
+                    android:layout_weight="1"
+                    android:inputType="textPassword"
+                    android:paddingRight="@dimen/px_20"
+                    android:background="@color/trans"
+                    android:gravity="center|left"
+                    android:hint="@string/login_password"
+                    android:paddingLeft="@dimen/px_20"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_90"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="6~20位字符"
+                    android:textColor="@color/gray_999_text" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_piv_get"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <com.goodhappiness.widget.ClearEditText
+                    android:id="@+id/register_sn_code_pic"
+                    android:layout_width="match_parent"
+                    android:paddingRight="@dimen/px_20"
+                    android:layout_height="@dimen/px_90"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bg_kk1"
+                    android:gravity="center|left"
+                    android:hint="@string/mac"
+                    android:paddingLeft="@dimen/px_20"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/iv_get_mac"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_90"
+                    android:layout_marginLeft="@dimen/px_16"
+                    android:background="@color/white"
+                    android:layout_weight="2"
+                    android:src="@mipmap/loading_default"
+                    android:gravity="center"
+                    android:text="@string/get_mac"
+                    android:textColor="@color/black_333_text" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="@dimen/px_20"
+                android:text="@string/pic_get_mac_tips"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_marginTop="@dimen/px_20"
+                android:orientation="horizontal">
+
+                <com.goodhappiness.widget.ClearEditText
+                    android:id="@+id/register_sn_code"
+                    android:layout_width="match_parent"
+                    android:paddingRight="@dimen/px_20"
+                    android:layout_height="@dimen/px_90"
+                    android:layout_weight="1"
+                    android:background="@mipmap/bg_kk1"
+                    android:gravity="center|left"
+                    android:hint="@string/mobile_mac"
+                    android:paddingLeft="@dimen/px_20"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_get_mac"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_90"
+                    android:layout_marginLeft="@dimen/px_16"
+                    android:layout_weight="2"
+                    android:background="@mipmap/bg_kk3"
+                    android:gravity="center"
+                    android:text="@string/get_mac"
+                    android:textColor="@color/black_333_text" />
+            </LinearLayout>
+
+            <com.goodhappiness.widget.StretchPanel
+                android:layout_marginTop="@dimen/px_20"
+                android:id="@+id/submit_order_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_register_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_30"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/px_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已阅读并同意《"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扑多协议"
+                    android:textColor="@color/lightsteelblue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="》"
+                    android:textColor="@color/white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tv_login"
+                        android:text="已注册，"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/px_30"
+                        android:text="立即登录"
+                        android:textColor="@color/theme_color" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"/>
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_90"
+                android:layout_marginLeft="@dimen/px_20"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_marginTop="@dimen/px_20"
+                android:background="@mipmap/bg_kk4"
+                android:gravity="center"
+                android:paddingLeft="@dimen/px_20"
+                android:text="立即注册领取红包"
+                android:textColor="@color/black_333_text"
+                android:textSize="19sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_60"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

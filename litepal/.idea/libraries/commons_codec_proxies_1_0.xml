@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="commons-codec-proxies-1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.jinahya/commons-codec-proxies/1.0/684c0e89aa468041ba606f8003a3395d36cd31f9/commons-codec-proxies-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.googlecode.jinahya/commons-codec-proxies/1.0/ba2ea1e4c78748f17b2878717775e91fd0ab5ee0/commons-codec-proxies-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

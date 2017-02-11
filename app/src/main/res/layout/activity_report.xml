@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/title_bar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_80"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_100"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_20"
+            android:text="@string/choose_report_reason" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/d_line" />
+
+        <ListView
+            android:id="@+id/report_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/d_line"
+            android:dividerHeight="@dimen/px_1" />
+
+        <TextView
+            android:id="@+id/report_tv_confirm"
+            android:layout_width="@dimen/px_340"
+            android:layout_height="@dimen/px_80"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_100"
+            android:background="@drawable/shape_for_black"
+            android:gravity="center"
+            android:text="@string/commit" />
+    </LinearLayout>
+</RelativeLayout>

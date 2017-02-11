@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/title_bar2" />
+
+    <TextView
+        android:id="@+id/fragment_lottery_tv_count_price"
+        android:visibility="gone"
+        android:layout_width="@dimen/px_35"
+        android:layout_height="@dimen/px_35"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/px_10"
+        android:background="@drawable/shape_red_point"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+    <com.goodhappiness.widget.refreshlayout.BGARefreshLayout
+        android:id="@+id/lottery_detail_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_80">
+
+        <ScrollView
+            android:id="@+id/lottery_detail_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/px_20"
+                    android:background="@color/e_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/lottery_detail_sl"
+                        android:layout_width="@dimen/px_134"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/px_10"
+                        android:layout_height="@dimen/px_82"
+                        android:src="@mipmap/ico_lq_normal" />
+                    <TextView
+                        android:id="@+id/tv_tips"
+                        android:gravity="center"
+                        android:textColor="@color/black_333_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_marginBottom="@dimen/px_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <!--<ImageView-->
+                <!--android:id="@+id/lottery_detail_sl"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/px_200"-->
+                <!--android:layout_margin="@dimen/px_15" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:background="#f9f9f9"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/lottery_detail_rl_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/lottery_detail_iv_status"
+                            android:layout_width="@dimen/px_98"
+                            android:layout_height="@dimen/px_40"
+                            android:layout_marginLeft="@dimen/px_10"
+                            android:src="@mipmap/ico_main_jxz" />
+
+                        <TextView
+                            android:id="@+id/lottery_detail_coupon_tv_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/px_5"
+                            android:layout_toRightOf="@+id/lottery_detail_iv_status"
+                            android:text=""
+                            android:textColor="@color/black_333_text" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lottery_detail_ll_process"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/px_10"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/now_num"
+                                android:textColor="@color/gray_999_text"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/lottery_detail_tv_current_period"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/px_10"
+                                android:textColor="@color/gray_999_text"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                        <com.goodhappiness.widget.PercentageBar
+                            android:id="@+id/lottery_detail_pb"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/px_20"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/px_8"
+                            android:layout_marginRight="@dimen/px_15"
+                            android:layout_marginTop="@dimen/px_8" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/lottery_detail_tv_exsitingTimes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/gray_999_text"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/surplus"
+                                    android:textColor="@color/gray_999_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/lottery_detail_tv_remain"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/px_5"
+                                    android:layout_marginRight="@dimen/px_5"
+                                    android:textColor="@color/advert_blue_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/people"
+                                    android:textColor="@color/gray_999_text"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lottery_detail_rl_revelation_ing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/px_10"
+                        android:paddingTop="@dimen/px_10"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/lottery_tv_currentPeriod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px_10"
+                            android:textColor="@color/gray_999_text"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lottery_tv_currentPeriod"
+                            android:layout_marginTop="@dimen/px_15"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/px_10">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:text="@string/reveal_countdown_time_"
+                                android:textColor="@color/black_333_text"
+                                android:textSize="13sp" />
+
+                            <com.goodhappiness.widget.timer.CountdownView
+                                android:id="@+id/lottery_tv_calcTimestamp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginBottom="@dimen/px_3"
+                                android:layout_marginLeft="@dimen/px_15"
+                                app:isShowDay="false"
+                                app:isShowHour="true"
+                                app:isShowMillisecond="true"
+                                app:isShowMinute="true"
+                                app:isShowSecond="true"
+                                app:suffixGravity="center"
+                                app:suffixTextColor="@color/join_red"
+                                app:suffixTextSize="17sp"
+                                app:timeTextColor="@color/join_red"
+                                app:timeTextSize="24sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/lottery_detail_tv_calculate_detail2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/px_20"
+                            android:background="@drawable/shape_for_calculate"
+                            android:paddingBottom="@dimen/px_5"
+                            android:paddingLeft="@dimen/px_10"
+                            android:paddingRight="@dimen/px_10"
+                            android:paddingTop="@dimen/px_5"
+                            android:text="@string/count_detail"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lottery_detail_rl_revelation_ing_fault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/px_10"
+                        android:paddingTop="@dimen/px_10"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/lottery_tv_currentPeriod2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px_10"
+                            android:textColor="@color/gray_999_text"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/px_90"
+                            android:layout_below="@+id/lottery_tv_currentPeriod2"
+                            android:orientation="horizontal"
+                            android:paddingLeft="@dimen/px_15">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@mipmap/ico_error" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/px_10"
+                                android:text="@string/fault_864"
+                                android:textColor="@color/join_red"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lottery_detail_ll_over"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/px_20"
+                        android:layout_marginLeft="@dimen/px_20"
+                        android:layout_marginRight="@dimen/px_20"
+                        android:layout_marginTop="@dimen/px_14"
+                        android:background="@drawable/shape_for_revealed"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/lottery_detail_ll_winner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="@dimen/px_45"
+                                android:layout_height="@dimen/px_40"
+                                android:layout_marginLeft="@dimen/px_15"
+                                android:layout_marginTop="@dimen/px_15">
+
+                                <com.goodhappiness.widget.RoundImageViewByXfermode
+                                    android:id="@+id/lottery_detail_iv_head"
+                                    android:layout_width="@dimen/px_40"
+                                    android:layout_height="@dimen/px_40" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@mipmap/ico_win_head" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/px_15"
+                                android:paddingLeft="@dimen/px_5"
+                                android:paddingTop="@dimen/px_15">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/winner_"
+                                        android:textColor="@color/gray_999_text"
+                                        android:textSize="12sp" />
+
+                                    <com.goodhappiness.widget.emoji.EmojiTextView
+                                        android:id="@+id/lottery_detail_tv_owner"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="azozo"
+                                        android:textColor="@color/advert_blue_text"
+                                        android:textSize="12sp"
+                                        app:emojiSize="15sp"
+                                        app:isEllipsize="true" />
+
+                                    <TextView
+                                        android:id="@+id/lottery_detail_tv_ip_address"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/gray_666_text"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+
+                                <TextView
+                                    android:id="@+id/lottery_detail_tv_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/px_3"
+                                    android:textColor="@color/gray_999_text"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/lottery_detail_tv_period"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/px_3"
+                                    android:textColor="@color/gray_999_text"
+                                    android:textSize="12sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/px_3"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/period_join_"
+                                        android:textColor="@color/gray_999_text"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/lottery_detail_tv_cost"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/join_red"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/people_count"
+                                        android:textColor="@color/gray_999_text"
+                                        android:textSize="12sp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/lottery_detail_tv_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/px_3"
+                                    android:textColor="@color/gray_999_text"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/bg_main_winnb"
+                            android:padding="@dimen/px_10">
+
+                            <TextView
+                                android:id="@+id/useless_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="@string/my_num_" />
+
+                            <TextView
+                                android:id="@+id/lottery_detail_tv_lucky_code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/px_5"
+                                android:layout_toRightOf="@+id/useless_tv"
+                                android:text="1000540"
+                                android:textColor="@color/join_red" />
+
+                            <TextView
+                                android:id="@+id/lottery_detail_tv_calculate_detail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/px_10"
+                                android:background="@drawable/shape_for_calculate_theme_color"
+                                android:paddingBottom="@dimen/px_5"
+                                android:paddingLeft="@dimen/px_10"
+                                android:paddingRight="@dimen/px_10"
+                                android:paddingTop="@dimen/px_5"
+                                android:text="@string/count_detail"
+                                android:textColor="@color/black_333_text"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100"
+                    android:layout_marginBottom="@dimen/px_15"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_marginTop="@dimen/px_10"
+                    android:background="@color/advert_bg">
+
+                    <TextView
+                        android:id="@+id/lottery_detail_tv_no_buy_tips"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/px_10"
+                        android:gravity="center"
+                        android:text="@string/no_lottery_record"
+                        android:textColor="@color/gray_999_text"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/lottery_detail_ll_buy_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/px_20"
+                        android:paddingTop="@dimen/px_15"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/you_join_"
+                            android:textColor="@color/gray_666_text"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/lottery_detail_tv_join_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/join_red"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px_5"
+                            android:text="次"
+                            android:textColor="@color/gray_666_text"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/lottery_detail_rl_lottery_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lottery_detail_ll_buy_tips"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/px_20"
+                        android:paddingTop="@dimen/px_10"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/lottery_detail_tv_codes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/px_40"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/gray_666_text"
+                            android:textSize="12sp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/px_18"
+                            android:layout_height="@dimen/px_11"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/px_20"
+                            android:layout_marginTop="@dimen/px_10"
+                            android:src="@mipmap/btn_main_more" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <include layout="@layout/layout_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/lottery_detail_rl_graphic_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_110"
+                    android:background="@drawable/selector_white_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/px_30"
+                        android:text="@string/pic_letter_detail" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/px_90"
+                        android:gravity="right"
+                        android:text="@string/wifi_look"
+                        android:textColor="@color/gray_999_text"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/px_40"
+                        android:layout_height="@dimen/px_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/px_30"
+                        android:padding="@dimen/px_8"
+                        android:src="@mipmap/btn_main_middle" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_1"
+                    android:layout_marginLeft="@dimen/px_10"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:id="@+id/lottery_detail_rl_winner_past"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_110"
+                    android:background="@drawable/selector_white_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/px_30"
+                        android:text="@string/revelation" />
+
+                    <ImageView
+                        android:layout_width="@dimen/px_40"
+                        android:layout_height="@dimen/px_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/px_30"
+                        android:padding="@dimen/px_8"
+                        android:src="@mipmap/btn_main_middle" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_120"
+                    android:padding="@dimen/px_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/all_join_record2" />
+
+                    <TextView
+                        android:id="@+id/lottery_detail_lv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/gray_999_text" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_color" />
+                <!--
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px_90"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/px_20">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ico_main_b_sla" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/px_5"
+                            android:text="上拉加载更多"
+                            android:textColor="@color/gray_999_text" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+-->
+
+                <com.goodhappiness.widget.MyListView
+                    android:id="@+id/lottery_detail_lv_join"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/trans" />
+
+                <RelativeLayout
+                    android:id="@+id/lottery_detail_rl_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/px_90"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/px_20">
+
+                        <ImageView
+                            android:id="@+id/lottery_detail_iv_loading"
+                            android:layout_width="@dimen/px_40"
+                            android:layout_height="@dimen/px_40"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/loading"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/lottery_detail_tv_loading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/px_5"
+                            android:text="@string/loading_more"
+                            android:textColor="@color/gray_999_text"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100" />
+            </LinearLayout>
+        </ScrollView>
+    </com.goodhappiness.widget.refreshlayout.BGARefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/lottery_detail_rl_join_other"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_20"
+            android:text="@string/new_period_ing" />
+
+        <TextView
+            android:id="@+id/lottery_detail_tv_go_other"
+            android:layout_width="@dimen/px_160"
+            android:layout_height="@dimen/px_70"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_20"
+            android:background="@drawable/shape_for_theme_btn"
+            android:gravity="center"
+            android:text="@string/go_immediately" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lottery_detail_rl_add_or_join"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_110"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lottery_detail_tv_buy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/px_15"
+                android:layout_marginLeft="@dimen/px_15"
+                android:layout_marginRight="@dimen/px_8"
+                android:layout_marginTop="@dimen/px_15"
+                android:layout_weight="1"
+                android:background="@drawable/shape_for_theme_btn"
+                android:gravity="center"
+                android:text="@string/buy_immediately" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d9e3f5" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/load_fail_view"
+        android:layout_marginTop="@dimen/px_80" />
+</RelativeLayout>

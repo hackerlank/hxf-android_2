@@ -1,0 +1,530 @@
+[
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_voice_style.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_voice_style.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_video.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_video.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_camera_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_camera_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_style.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_style.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_yes_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_yes_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_checkbox.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_location.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_location.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_star_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_star_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_yes_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_yes_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_hangup_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_hangup_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_receive.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_location.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_location.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_speaker_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_speaker_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_text.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_no_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_no_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_back.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_back.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_phone.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_phone.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\snackbar_background.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.0\\res\\drawable\\snackbar_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_top_list_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_vedio_answer_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_vedio_answer_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_vedio_answer_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_vedio_answer_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_mute_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_mute_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_picture.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_picture.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_admin_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_admin_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_selector_grid_camera_mask.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_selector_grid_camera_mask.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_style.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_style.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_selector_grid_camera_mask.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_selector_grid_camera_mask.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_audio_answer_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_audio_answer_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_float_bg.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_float_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_mute_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_mute_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_location_style.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_location_style.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_video.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_video.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_progress_sending_style.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_progress_sending_style.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_picture.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_picture.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_text.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_text.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_float_bg.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_float_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sp_grid_mask.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sp_grid_mask.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\fab_background.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.0\\res\\drawable\\fab_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_send.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_no_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_no_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\snackbar_background.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.0\\res\\drawable\\snackbar_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_back.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_back.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_star_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_star_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\fab_background.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.0\\res\\drawable\\fab_background.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_phone.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_phone.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_checkbox.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_camera_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_camera_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_speaker_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_speaker_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sp_grid_mask.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sp_grid_mask.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_hangup_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_hangup_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_sel_picsel_toolbar_send.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_sel_picsel_toolbar_send.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_location_style.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_location_style.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_admin_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_admin_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_voip_audio_answer_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_voip_audio_answer_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_corner_voice_style.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_corner_voice_style.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_receive.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_progress_sending_style.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_progress_sending_style.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_top_list_selector.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
+    },
+    {
+        "merged": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_camera.xml",
+        "source": "E:\\ASProject\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_camera.xml",
+        "source": "C:\\Users\\huangzhifeng\\hxf-android\\Rong\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_camera.xml"
+    }
+]

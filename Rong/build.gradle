@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 2016071820 
+        versionName "2.6.7"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src/main/java']
+            renderscript.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/main/assets']
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/libs']
+        }
+    }
+}
+
+dependencies {
+    //    compile 'com.android.support:support-annotations:23.0.0'
+    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:design:22.2.0'
+    compile fileTree(include: ['*.jar'], dir: 'src/main/libs')
+    compile files('libs/HwPush_SDK_V2705.jar')
+    compile files('libs/MiPush_SDK_Client_3_0_3.jar')
+}

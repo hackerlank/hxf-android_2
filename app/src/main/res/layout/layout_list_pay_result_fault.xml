@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/order_detail_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20"
+    android:paddingTop="@dimen/px_30">
+
+    <TextView
+        android:id="@+id/layout_list_pay_result_fault_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="幸福商城兑换券 1000张"
+        android:textColor="@color/gray_999_text"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/layout_list_pay_result_fault_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_10"
+        android:text="商品期号： 303245985"
+        android:textColor="@color/gray_999_text"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_height="1px"/>
+    <View
+        android:id="@+id/layout_list_pay_result_fault_dash"
+        android:layerType="software"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dash_gray" />
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_80"
+        android:orientation="vertical">
+            <ListView
+                android:id="@+id/charge_record_lv"
+                android:layout_width="match_parent"
+                android:divider="@color/white"
+                android:dividerHeight="@dimen/px_20"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/charge_record_ll_no_charge"
+        android:layout_marginTop="@dimen/px_80"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="@dimen/px_100"
+            android:layout_width="@dimen/px_400"
+            android:layout_height="@dimen/px_400"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/no_charge_record"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_40"
+            android:text="@string/no_redbag"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <include
+        android:layout_marginTop="@dimen/px_80"
+        layout="@layout/load_fail_view" />
+</RelativeLayout>

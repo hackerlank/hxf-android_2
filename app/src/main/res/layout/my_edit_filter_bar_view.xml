@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.goodhappiness.widget.social.MyEditFilterBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/lsq_param_config_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        layout="@layout/tusdk_impl_component_widget_parameter_config_view" />
+
+    <include
+        android:id="@+id/lsq_group_filter_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        layout="@layout/my_group_filter_bar" />
+
+
+</com.goodhappiness.widget.social.MyEditFilterBarView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/px_2"
+    android:background="@color/e_bg">
+
+    <ImageView
+        android:id="@+id/id_index_gallery_item_image"
+        android:layout_width="@dimen/px_200"
+        android:layout_height="@dimen/px_200"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/loading_default"
+        android:scaleType="centerCrop" />
+    <RelativeLayout
+        android:id="@+id/id_index_gallery_item_rl"
+        android:layout_width="@dimen/px_140"
+        android:layout_height="@dimen/px_200"
+        android:visibility="gone"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:id="@+id/result_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:ems="1"
+            android:text="点击进入商城"
+            android:textColor="@color/black_333_text" />
+    </RelativeLayout>
+</RelativeLayout>

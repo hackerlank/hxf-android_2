@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/order_detail_bg"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_marginBottom="@dimen/px_20"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:padding="@dimen/px_20"
+            android:text="@string/attention_order_detail"
+            android:textSize="12sp"
+            android:textColor="@color/dash_color"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layerType="software"
+            android:background="@drawable/dash_red"/>
+        <com.goodhappiness.widget.MyListView
+            android:id="@+id/layout_stretch_submit_order_lv"
+            android:divider="@color/trans"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_marginBottom="@dimen/px_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

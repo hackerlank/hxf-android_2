@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px_150"
+    android:layout_height="@dimen/px_50"
+    android:background="@drawable/selector_trans"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/grid_add_count_tv"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/black_333_text"
+        android:background="@drawable/shape_for_back_thin_stroke"
+        android:layout_width="@dimen/px_80"
+        android:layout_height="@dimen/px_50" />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px_5"
+    android:paddingLeft="@dimen/px_50"
+    android:paddingRight="@dimen/px_50"
+    android:paddingTop="@dimen/px_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_for_white_trans"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_default_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_60"
+            android:gravity="center"
+            android:paddingLeft="@dimen/px_20"
+            android:textColor="@color/black_333_text"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="@dimen/px_600"
+            android:layout_height="1px"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/trans" />
+
+        <TextView
+            android:id="@+id/dialog_default_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/px_20"
+            android:text=""
+            android:textColor="@color/gray_999_text"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/dialog_default_ok"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/px_20"
+            android:layout_height="@dimen/px_60"
+            android:paddingBottom="@dimen/px_20"
+            android:layout_weight="1"
+            android:background="@color/trans"
+            android:text="@string/confirm"
+            android:textColor="@color/black_333_text"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

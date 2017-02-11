@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/px_600"
+        android:layout_height="@dimen/px_600"
+        android:background="@color/black"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/send_flower_success" />
+    <RelativeLayout
+        android:layout_width="@dimen/px_600"
+        android:layout_height="@dimen/px_600"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_cls"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/bg_cls" />
+
+        <ImageView
+            android:id="@+id/look"
+            android:layout_width="@dimen/px_166"
+            android:layout_height="@dimen/px_60"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_15"
+            android:src="@mipmap/flower_record" />
+
+        <TextView
+            android:id="@+id/tv_look"
+            android:layout_width="@dimen/px_153"
+            android:layout_height="@dimen/px_60"
+            android:layout_alignLeft="@+id/look"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="@string/look_record"
+            android:textColor="@color/black_333_text" />
+    </RelativeLayout>
+</RelativeLayout>

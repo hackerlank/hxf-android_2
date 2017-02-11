@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/layout_grid_friends_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_200" />
+    <ImageView
+        android:id="@+id/layout_grid_friends_iv_gif"
+        android:layout_alignBottom="@+id/layout_grid_friends_iv"
+        android:layout_width="@dimen/px_80"
+        android:layout_margin="@dimen/px_2"
+        android:src="@mipmap/btn_gif"
+        android:layout_height="@dimen/px_40" />
+</RelativeLayout>

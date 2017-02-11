@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tl_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80"
+        android:background="@color/trans" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/start_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:id="@+id/start_rl"
+        android:layout_width="@dimen/px_200"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/px_80"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/ico_qd_d2"
+            android:layout_width="@dimen/px_20"
+            android:layout_height="@dimen/px_20" />
+        <ImageView
+            android:id="@+id/start_iv_dot"
+            android:src="@mipmap/ico_qd_d1"
+            android:layout_width="@dimen/px_20"
+            android:layout_height="@dimen/px_20" />
+        <ImageView
+            android:src="@mipmap/ico_qd_d2"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/px_20"
+            android:layout_height="@dimen/px_20" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ico_qd_d2"
+            android:layout_width="@dimen/px_20"
+            android:layout_height="@dimen/px_20" />
+    </RelativeLayout>
+</RelativeLayout>

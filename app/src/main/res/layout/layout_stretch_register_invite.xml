@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/trans">
+    <com.goodhappiness.widget.ClearEditText
+        android:id="@+id/register_invite_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_90"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_20"
+        android:background="@mipmap/bg_kk1"
+        android:gravity="center|left"
+        android:hint="@string/invite_code"
+        android:paddingLeft="@dimen/px_20"
+        android:textSize="13sp" />
+</RelativeLayout>

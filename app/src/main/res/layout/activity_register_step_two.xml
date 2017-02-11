@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_80"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/register_two_tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_30"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_30"
+            android:text="@string/you_receive_a_mac_msg"
+            android:textColor="@color/order_red"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_30"
+            android:background="@drawable/shape_for_black">
+
+            <com.goodhappiness.widget.ClearEditText
+                android:id="@+id/register_two_cet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/px_15"
+                android:layout_marginBottom="@dimen/px_5"
+                android:layout_marginTop="@dimen/px_5"
+                android:background="@color/white"
+                android:hint="@string/please_input_mac"
+                android:textColorHint="@color/gray_999_text" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/register_two_tv_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_70"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_marginRight="@dimen/px_30"
+            android:background="@drawable/shape_for_theme_btn"
+            android:gravity="center"
+            android:text="@string/commit_mac" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_333_text"
+                android:text="@string/no_receive_" />
+
+            <TextView
+                android:id="@+id/register_two_tv_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resend"
+                android:textColor="@color/advert_blue_text" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/register_two_ll_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_30">
+
+            <TextView
+                android:id="@+id/register_two_tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/advert_blue_text"
+                android:text="60" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_333_text"
+                android:text="@string/second_resend"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

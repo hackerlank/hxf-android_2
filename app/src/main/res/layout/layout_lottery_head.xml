@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.goodhappiness.widget.DisPatchLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/lottery_sl"
+        android:background="@color/white"
+        app:indicator_drawable_selected="@mipmap/bg_banner_click"
+        app:indicator_drawable_unselected="@mipmap/bg_banner"
+        app:indicator_height="5dp"
+        app:indicator_width="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_300"/>
+
+    <LinearLayout
+        android:id="@+id/layout_lottery_head_ll_adv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/e_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/px_15">
+
+        <ImageView
+            android:layout_width="@dimen/px_40"
+            android:layout_height="@dimen/px_30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px_10"
+            android:src="@mipmap/ico_scroll_broadcast" />
+
+        <com.goodhappiness.widget.UpMarqueeTextView
+            android:id="@+id/layout_lottery_head_umt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_40"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px_10" />
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="恭喜" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/blue"
+            android:text="用户名" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="1小时前获得" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/red"
+            android:text="幸福券1000张！" />
+-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_lottery_head_ll_tab"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/px_80">
+
+        <RelativeLayout
+            android:id="@+id/layout_lottery_head_rl_process"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/layout_lottery_head_tv_process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/black_333_text"
+                android:text="@string/progress" />
+
+            <View
+                android:id="@+id/layout_lottery_head_v_process"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/theme_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_lottery_head_rl_request"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/layout_lottery_head_tv_request"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/gray_999_text"
+                android:text="@string/all_need" />
+
+            <ImageView
+                android:id="@+id/layout_lottery_head_iv_request"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px_30"
+                android:layout_marginLeft="@dimen/px_3"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/layout_lottery_head_tv_request"
+                android:src="@mipmap/ico_btn_nav" />
+
+            <View
+                android:id="@+id/layout_lottery_head_v_request"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.goodhappiness.widget.DisPatchLinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/layout_grid_iv"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="@dimen/px_35"
+        android:layout_height="@dimen/px_35"
+        android:layout_alignRight="@+id/layout_grid_iv"
+        android:layout_alignBottom="@+id/layout_grid_iv"
+        android:layout_margin="@dimen/px_5"
+        android:background="@drawable/shape_gray_point"
+        android:gravity="center"
+        android:textColor="@color/black_333_text"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+</RelativeLayout>

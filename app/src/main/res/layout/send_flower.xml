@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/px_5">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="@dimen/px_386"
+        android:layout_height="@dimen/px_184"
+        android:background="@mipmap/flower_bg_left">
+
+        <ImageView
+            android:layout_width="@dimen/px_116"
+            android:layout_height="@dimen/px_136"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:src="@mipmap/flower_letter" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_170"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_40"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送给你"
+                android:textColor="@color/gray_666_text" />
+
+            <com.goodhappiness.widget.emoji.EmojiTextView
+                android:id="@+id/tv_sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_5"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="用户名"
+                android:textColor="@color/advert_blue_text"
+                app:emojiSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_170"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_100"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/px_45"
+                android:layout_height="@dimen/px_42"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/px_5"
+                android:src="@mipmap/ico_flower" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="X"
+                android:textColor="@color/gray_666_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_flower_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_5"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="50"
+                android:textColor="@color/black_333_text" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

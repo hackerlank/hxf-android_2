@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/common_rl_head"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/px_80"
+    android:background="#f5f5f5">
+
+    <ImageView
+        android:id="@+id/common_left"
+        android:layout_width="@dimen/px_260"
+        android:layout_height="@dimen/px_80"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingLeft="@dimen/px_25"
+        android:paddingRight="@dimen/px_198"
+        android:paddingTop="@dimen/px_20"
+        android:src="@mipmap/back"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/common_mid"
+        android:layout_width="@dimen/px_80"
+        android:layout_height="@dimen/px_80"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/px_17" />
+
+    <com.goodhappiness.widget.emoji.EmojiTextView
+        android:id="@+id/common_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/px_5"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:emojiSize="20sp" />
+
+    <ImageView
+        android:id="@+id/common_right2"
+        android:layout_width="@dimen/px_60"
+        android:layout_height="@dimen/px_60"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px_100"
+        android:padding="@dimen/px_12"
+        android:src="@mipmap/share"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/common_right"
+        android:layout_width="@dimen/px_60"
+        android:layout_height="@dimen/px_60"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px_30"
+        android:padding="@dimen/px_12"
+        android:src="@mipmap/ico_btn2_header"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/common_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_40"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/px_20"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_100">
+
+    <RelativeLayout
+        android:id="@+id/layout_list_join_record_rl_head"
+        android:layout_width="@dimen/px_56"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/px_30">
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/line_color" />
+
+        <com.goodhappiness.widget.RoundImageViewByXfermode
+            android:id="@+id/layout_list_join_record_iv_head"
+            android:layout_width="@dimen/px_56"
+            android:layout_height="@dimen/px_56"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_10"
+        android:layout_toRightOf="@+id/layout_list_join_record_rl_head"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.goodhappiness.widget.emoji.EmojiTextView
+                android:id="@+id/layout_list_join_record_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/advert_blue_text"
+                android:textSize="12sp"
+                app:emojiSize="20sp"
+                app:isEllipsize="true"
+                app:length="4" />
+
+            <TextView
+                android:id="@+id/layout_list_join_record_tv_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_8"
+                android:textColor="@color/gray_666_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/joined"
+                android:textColor="@color/gray_666_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/layout_list_join_record_tv_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_8"
+                android:textColor="@color/join_red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/layout_list_join_record_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_666_text"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

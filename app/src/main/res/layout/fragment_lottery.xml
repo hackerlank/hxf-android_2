@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_lottery_rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/fragment_lottery_title"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/fragment_lottery_tv_count_price"
+        android:layout_width="@dimen/px_35"
+        android:layout_height="@dimen/px_35"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/px_10"
+        android:background="@drawable/shape_red_point"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <com.goodhappiness.widget.refreshlayout.BGARefreshLayout
+        android:id="@+id/rl_gridview_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_80">
+        <com.goodhappiness.widget.HeaderGridView
+            android:id="@+id/lottery_lv"
+            android:numColumns="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none" />
+    </com.goodhappiness.widget.refreshlayout.BGARefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/lottery_rl_no_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_400"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/px_200"
+            android:layout_height="@dimen/px_200"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/no_lottery_record" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_220"
+            android:text="@string/no_goods_now"
+            android:textColor="@color/black_333_text"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/revelation_empty_view"
+        android:layout_marginTop="@dimen/px_80"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/px_300"
+            android:layout_height="@dimen/px_300"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_220"
+            android:src="@mipmap/img_load_fail" />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/px_40"
+            android:textColor="@color/black_333_text"
+            android:text="@string/data_load_fail" />
+
+        <TextView
+            android:id="@+id/revelation_empty_view_tv_reload"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/px_300"
+            android:layout_height="@dimen/px_60"
+            android:gravity="center"
+            android:background="@drawable/shape_for_theme_btn"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/px_40"
+            android:textColor="@color/black_333_text"
+            android:text="@string/reload" />
+    </LinearLayout>
+</RelativeLayout>

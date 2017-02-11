@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_20"
+        android:background="@color/d_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_146"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/fragment_personal_ll_sign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/selector_white_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fragment_personal_iv_sign"
+                android:layout_width="@dimen/px_75"
+                android:layout_height="@dimen/px_75"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px_20"
+                android:padding="@dimen/px_3"
+                android:src="@mipmap/ico_sign_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/day_sign"
+                android:textColor="@color/gray_666_text"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_personal_ll_invite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/selector_white_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_75"
+                android:layout_height="@dimen/px_75"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px_20"
+                android:padding="@dimen/px_3"
+                android:src="@mipmap/ico_list_top2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/invite_get_present"
+                android:textColor="@color/gray_666_text"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_personal_ll_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/selector_white_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_75"
+                android:layout_height="@dimen/px_75"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px_20"
+                android:padding="@dimen/px_3"
+                android:src="@mipmap/ico_mian_top3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/my_gallery"
+                android:textColor="@color/gray_666_text"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_personal_rl_lottery_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80"
+        android:background="@drawable/selector_white_bg">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/d_line" />
+
+        <ImageView
+            android:layout_width="@dimen/px_44"
+            android:layout_height="@dimen/px_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:src="@mipmap/ico_list_one" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_100"
+            android:text="@string/all_join_record"
+            android:textColor="@color/black_333_text" />
+
+        <ImageView
+            android:layout_width="@dimen/px_12"
+            android:layout_height="@dimen/px_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@mipmap/next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_personal_rl_win_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80"
+        android:background="@drawable/selector_white_bg">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="@dimen/px_20"
+            android:background="@color/d_line" />
+
+        <ImageView
+            android:layout_width="@dimen/px_44"
+            android:layout_height="@dimen/px_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:src="@mipmap/ico_list_two" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_100"
+            android:text="@string/win_record"
+            android:textColor="@color/black_333_text" />
+
+        <ImageView
+            android:layout_width="@dimen/px_12"
+            android:layout_height="@dimen/px_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@mipmap/next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_personal_rl_exchange_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80"
+        android:background="@drawable/selector_white_bg">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="@dimen/px_20"
+            android:background="@color/d_line" />
+
+        <ImageView
+            android:layout_width="@dimen/px_44"
+            android:layout_height="@dimen/px_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:src="@mipmap/ico_list_three" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_100"
+            android:text="@string/exchange_record"
+            android:textColor="@color/black_333_text" />
+
+        <ImageView
+            android:layout_width="@dimen/px_12"
+            android:layout_height="@dimen/px_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@mipmap/next" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_20"
+        android:background="@color/d_line"/>
+    <RelativeLayout
+        android:id="@+id/fragment_personal_rl_charge_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80"
+        android:background="@drawable/selector_white_bg">
+
+        <ImageView
+            android:layout_width="@dimen/px_44"
+            android:layout_height="@dimen/px_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:src="@mipmap/ico_list_four" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_100"
+            android:text="@string/charge_record"
+            android:textColor="@color/black_333_text" />
+
+        <ImageView
+            android:layout_width="@dimen/px_12"
+            android:layout_height="@dimen/px_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@mipmap/next" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/px_20"
+            android:background="@color/d_line" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_personal_rl_redbag"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80"
+        android:background="@drawable/selector_white_bg">
+
+        <ImageView
+            android:layout_width="@dimen/px_44"
+            android:layout_height="@dimen/px_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:src="@mipmap/ico_list_9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_100"
+            android:text="@string/redbag"
+            android:textColor="@color/black_333_text" />
+
+
+        <ImageView
+            android:layout_width="@dimen/px_12"
+            android:layout_height="@dimen/px_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@mipmap/next" />
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/px_20"
+        android:background="@color/d_line" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_personal_ll_flower"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80"
+        android:background="@drawable/selector_white_bg">
+
+        <ImageView
+            android:layout_width="@dimen/px_44"
+            android:layout_height="@dimen/px_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:src="@mipmap/ico_list_top1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_100"
+            android:text="@string/my_flower"
+            android:textColor="@color/black_333_text" />
+
+        <ImageView
+            android:layout_width="@dimen/px_12"
+            android:layout_height="@dimen/px_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@mipmap/next" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/px_20"
+            android:background="@color/d_line" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_20"
+            android:background="@color/d_line" />
+    </RelativeLayout>
+</LinearLayout>

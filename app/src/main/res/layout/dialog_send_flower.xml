@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100"
+        android:background="@color/e_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_15"
+            android:text="@string/count_choose"
+            android:textColor="@color/black_333_text" />
+
+        <ImageView
+            android:id="@+id/dialog_add_to_list_iv_cancel"
+            android:layout_width="@dimen/px_40"
+            android:layout_height="@dimen/px_40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_35"
+            android:src="@mipmap/ico_btn_click" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/send_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:layout_marginLeft="@dimen/px_24"
+        android:layout_marginRight="@dimen/px_24"
+        android:layout_marginTop="@dimen/px_20"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/px_400"
+        android:layout_height="@dimen/px_100"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_for_search">
+
+        <ImageView
+            android:id="@+id/dialog_add_to_list_iv_reduce"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_100"
+            android:padding="@dimen/px_30"
+            android:src="@mipmap/ico_btn_reduce" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/px_100"
+            android:background="#999" />
+
+        <EditText
+            android:id="@+id/dialog_add_to_list_cet"
+            android:layout_width="@dimen/px_180"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/white"
+            android:textColor="@color/join_red"
+            android:gravity="center"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text="1"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_100"
+            android:background="#999" />
+
+        <ImageView
+            android:id="@+id/dialog_add_to_list_iv_add"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_100"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/px_30"
+            android:src="@mipmap/ico_btn_add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送"
+                android:textColor="@color/gray_999_text" />
+
+            <TextView
+                android:id="@+id/tv_flower_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/join_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="朵花花，共"
+                android:textColor="@color/gray_999_text" />
+
+            <TextView
+                android:id="@+id/tv_sum_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/join_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元。"
+                android:textColor="@color/gray_999_text" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dialog_add_to_list_tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_100"
+        android:layout_gravity="center_vertical"
+        android:background="@color/theme_color"
+        android:gravity="center"
+        android:text="@string/confirm_to_send"
+        android:textColor="@color/black_333_text"
+        android:textSize="18sp" />
+</LinearLayout>

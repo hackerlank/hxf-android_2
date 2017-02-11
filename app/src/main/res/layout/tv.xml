@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.goodhappiness.widget.emoji.EmojiTextView
+        android:id="@+id/tv"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        app:emojiSize="17sp"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowRadius="5"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

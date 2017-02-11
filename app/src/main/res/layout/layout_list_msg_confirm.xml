@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_70">
+
+    <RelativeLayout
+        android:layout_width="@dimen/px_120"
+        android:layout_height="@dimen/px_70">
+
+        <View
+            android:id="@+id/layout_list_msg_confirm_black_view_up"
+            android:layout_width="@dimen/px_3"
+            android:layout_height="@dimen/px_40"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black_333_text" />
+
+        <View
+            android:id="@+id/layout_list_msg_confirm_black_view_down"
+            android:layout_width="@dimen/px_3"
+            android:layout_height="@dimen/px_40"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/black_333_text" />
+
+        <ImageView
+            android:id="@+id/layout_list_msg_confirm_iv_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/point_no_over" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/layout_list_msg_confirm_tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:layout_marginLeft="@dimen/px_120"
+        android:textColor="@color/black_333_text"
+        android:text="@string/get_goods" />
+
+    <TextView
+        android:id="@+id/layout_list_msg_confirm_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/gray_999_text"
+        android:layout_alignParentRight="true"
+        android:textSize="12sp"
+        android:layout_marginRight="@dimen/px_20"
+        android:text="2016-03-25 10:27" />
+    <View
+        android:id="@+id/layout_list_msg_confirm_view_button"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/px_20"
+        android:background="@color/d_line"
+        android:layout_marginLeft="@dimen/px_120" />
+</RelativeLayout>

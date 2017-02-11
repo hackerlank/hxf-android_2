@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_80"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_80"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_20"
+            android:text="@string/choose_charge_count" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/d_line" />
+
+        <GridView
+            android:id="@+id/charge_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_24"
+            android:layout_marginRight="@dimen/px_24"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_20"
+            android:layout_marginTop="@dimen/px_30"
+            android:background="@color/f5_bg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_80"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px_20"
+            android:text="@string/choose_charge_way" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/d_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/confirm_order_vg_pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_50"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/confirm_order_vb_wechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:button="@drawable/pay_radio_button"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/selector_white_bg"
+                    android:drawablePadding="@dimen/px_20"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingRight="@dimen/px_30"
+                    android:paddingTop="@dimen/px_10"
+                    android:text="@string/wechat_pay" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/d_line" />
+
+                <RadioButton
+                    android:id="@+id/confirm_order_vb_aliy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:button="@drawable/pay_radio_button"
+                    android:drawableLeft="@drawable/selector_white_bg"
+                    android:drawablePadding="@dimen/px_20"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingRight="@dimen/px_30"
+                    android:paddingTop="@dimen/px_10"
+                    android:text="@string/ali_pay" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/d_line" />
+
+                <RadioButton
+                    android:id="@+id/confirm_order_vb_union_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:button="@drawable/pay_radio_button"
+                    android:drawableLeft="@drawable/selector_white_bg"
+                    android:drawablePadding="@dimen/px_20"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingRight="@dimen/px_30"
+                    android:paddingTop="@dimen/px_10"
+                    android:text="@string/union_pay" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_20"
+            android:background="@color/f5_bg" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/charge_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_86"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/px_20"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:background="@drawable/shape_for_theme_btn"
+        android:gravity="center"
+        android:text="@string/confirm_charge" />
+</RelativeLayout>

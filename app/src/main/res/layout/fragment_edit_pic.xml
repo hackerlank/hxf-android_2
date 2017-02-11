@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_bg">
+
+    <include layout="@layout/title_bar2" />
+
+    <ScrollView
+        android:id="@+id/edit_pic_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/px_88"
+        android:layout_marginTop="@dimen/px_80"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/px_10">
+
+            <RelativeLayout
+                android:id="@+id/rl_cut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginRight="@dimen/px_10">
+
+                <RelativeLayout
+                    android:id="@+id/lsq_imageWrapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_0">
+
+                    <org.lasque.tusdk.core.seles.tusdk.FilterImageView
+                        android:id="@+id/filterimageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/filter_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+                <org.lasque.tusdk.impl.components.widget.sticker.StickerView
+                    android:id="@+id/lsq_stickerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_0" />
+
+                <org.lasque.tusdk.core.view.widget.TuMaskRegionView
+                    android:id="@+id/lsq_cutRegionView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_0" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edit_pic_rl_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/px_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/edit_pic_tv_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:text="@string/please_choose_photo"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <com.goodhappiness.widget.DisPatchGridView
+                android:id="@+id/photo_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/px_10"
+                android:cacheColorHint="@android:color/transparent"
+                android:horizontalSpacing="2dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dip" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_edit_pic_rl_sticker"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_160"
+                android:layout_marginTop="@dimen/px_10"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/fragment_edit_pic_rl_sticker_house"
+                    android:layout_width="@dimen/px_144"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/bg_tzk">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/px_80"
+                            android:layout_height="@dimen/px_80"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/ico_tzk" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/px_10"
+                            android:text="@string/sticker_depot"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px_144"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/lsq_sticker_bar"
+                        layout="@layout/my_sticker_bar_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/px_5"
+                        android:layout_weight="1" />
+
+                    <com.goodhappiness.widget.HorizontalListView
+                        android:id="@+id/fragment_edit_pic_lv_sticker"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/px_5"
+                        android:layout_weight="1"
+                        android:divider="@color/trans"
+                        android:fadingEdge=""
+                        app:dividerWidth="@dimen/px_10" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/lsq_filter_bar"
+                layout="@layout/tusdk_impl_component_edit_filter_bar_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/px_10" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/edit_pic_hide_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_250"
+        android:layout_marginTop="@dimen/px_80"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/edit_pic_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_88"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/floder_ll_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_white_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/floder_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/all_pic"
+                android:textColor="@color/gray_666_text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_5"
+                android:src="@mipmap/btn_main_down" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/edit_pic_tv_sticker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_white_bg"
+            android:gravity="center"
+            android:text="@string/lsq_edit_entry_sticker"
+            android:textColor="@color/gray_999_text" />
+
+        <TextView
+            android:id="@+id/edit_pic_tv_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_white_bg"
+            android:drawableTop="@null"
+            android:gravity="center"
+            android:text="@string/lsq_edit_entry_filter"
+            android:textColor="@color/gray_999_text" />
+
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/floder_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/edit_pic_ll_bottom"
+        android:layout="@layout/fload_list_layout_stub" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/edit_pic_ll_bottom"
+        android:background="@color/d_line" />
+
+</RelativeLayout>

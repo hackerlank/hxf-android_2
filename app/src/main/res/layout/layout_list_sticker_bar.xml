@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/px_6"
+        android:background="@drawable/shape_for_sticker"
+        android:orientation="vertical">
+
+        <com.goodhappiness.widget.RoundImageViewByXfermode2
+            android:id="@+id/layout_list_sticker_bar_iv"
+            android:layout_gravity="center_horizontal"
+            zhy:radius1="@dimen/px_6"
+            zhy:imageType1="1"
+            android:layout_width="@dimen/px_70"
+            android:layout_height="@dimen/px_70" />
+
+        <TextView
+            android:id="@+id/layout_list_sticker_bar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:text="1" />
+    </LinearLayout>
+</RelativeLayout>

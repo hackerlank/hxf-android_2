@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.goodhappiness.ui.lottery.LotteryRecordFragment">
+
+    <com.goodhappiness.widget.DisPatchListView
+        android:id="@+id/fragment_exchange_record_lv"
+        android:scrollbars="none"
+        android:divider="@color/e_bg"
+        android:dividerHeight="@dimen/px_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/fragment_post_publish_ll_no_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="@dimen/px_50"
+            android:layout_width="@dimen/px_400"
+            android:layout_height="@dimen/px_400"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/no_exchange_record"/>
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_40"
+            android:text="@string/no_data"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <include
+        layout="@layout/load_fail_view" />
+</RelativeLayout>

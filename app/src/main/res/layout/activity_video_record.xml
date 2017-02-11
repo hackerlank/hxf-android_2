@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.goodhappiness.widget.VideoRecorderView
+        android:id="@+id/recoder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/px_80"
+            android:layout_height="@dimen/px_80"
+            android:padding="@dimen/px_20"
+            android:src="@mipmap/icon_delete_default" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="上移取消"
+        android:shadowColor="@color/black"
+        android:shadowRadius="5"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_btn"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/px_400"
+        android:layout_alignParentBottom="true">
+
+        <com.goodhappiness.widget.RoundImageViewByXfermode2
+            android:id="@+id/camera_iv"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="@dimen/px_100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_40"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/loading_default"
+            app:imageType1="1"
+            android:visibility="visible"
+            app:radius1="10dp"/>
+
+        <ImageView
+            android:id="@+id/video_cancel"
+            android:layout_width="@dimen/px_80"
+            android:layout_height="@dimen/px_80"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back"
+            android:padding="@dimen/px_15"
+            android:layout_marginLeft="@dimen/px_60"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/videoController"
+            android:layout_width="@dimen/px_150"
+            android:layout_height="@dimen/px_150"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/shutter" />
+
+        <ImageView
+            android:id="@+id/iv_flash"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_60"
+            android:scaleType="center"
+            android:visibility="visible"
+            android:src="@mipmap/ico_flash_off" />
+        <ImageView
+            android:id="@+id/video_complete"
+            android:layout_width="@dimen/px_110"
+            android:layout_height="@dimen/px_70"
+            android:padding="@dimen/px_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/video_complete"
+            android:layout_marginRight="@dimen/px_60"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</RelativeLayout>

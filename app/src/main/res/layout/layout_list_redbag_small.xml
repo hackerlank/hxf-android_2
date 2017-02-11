@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_trans2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_redbag_outside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_15"
+        android:layout_marginRight="@dimen/px_15"
+        android:layout_marginTop="@dimen/px_15"
+        android:background="@drawable/shape_for_while_circle">
+
+        <RelativeLayout
+            android:id="@+id/rl_redbag"
+            android:layout_width="@dimen/px_112"
+            android:layout_height="@dimen/px_120"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/px_15">
+
+            <ImageView
+                android:layout_width="@dimen/px_112"
+                android:layout_height="@dimen/px_120"
+                android:src="@mipmap/ico_rebp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/money_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_5"
+                    android:text="元"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/px_5"
+                android:text="通用红包"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_redbag"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扑多一元夺券红包"
+                android:textColor="@color/black_333_text"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/start_time_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_5"
+                android:text="生效期：2016-08-08 13:00:57"
+                android:textColor="@color/gray_999_text"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/end_time_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_5"
+                android:text="有效期：2016-08-08 13:00:57"
+                android:textColor="@color/gray_999_text"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/desc_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_5"
+                android:text="使用条件"
+                android:textColor="@color/gray_999_text"
+                android:textSize="9sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_can_use_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_5"
+                    android:text="(可用余额"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/rest_money_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_5"
+                    android:text="4"
+                    android:textColor="@color/redbag_count"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_5"
+                    android:text=")"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_10"
+            android:src="@mipmap/btn_main_middles" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_210"
+        android:layout_marginLeft="@dimen/px_15"
+        android:layout_marginRight="@dimen/px_15"
+        android:layout_marginTop="@dimen/px_15"
+        android:background="@drawable/shape_for_redbag_cover" />
+
+    <ImageView
+        android:id="@+id/iv_status"
+        android:layout_width="@dimen/px_90"
+        android:layout_height="@dimen/px_90"
+        android:visibility="gone"
+        android:layout_alignBottom="@+id/rl_redbag_outside"
+        android:layout_alignRight="@+id/rl_redbag_outside"
+        android:layout_margin="@dimen/px_20"
+        android:src="@mipmap/use_over" />
+</RelativeLayout>

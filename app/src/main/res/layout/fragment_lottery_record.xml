@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.goodhappiness.ui.lottery.LotteryRecordFragment">
+
+    <ListView
+        android:id="@+id/fragment_lottery_record_lv"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/fragment_post_publish_ll_no_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginTop="@dimen/px_50"
+            android:layout_width="@dimen/px_400"
+            android:layout_height="@dimen/px_400"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/no_lottery_record"/>
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_40"
+            android:text="@string/you_have_no_record"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/lottery_record_tv_join"
+            android:layout_width="@dimen/px_320"
+            android:background="@drawable/shape_for_theme_btn"
+            android:gravity="center"
+            android:layout_height="@dimen/px_70"
+            android:layout_marginTop="@dimen/px_70"
+            android:text="@string/join_immediately"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+    <include
+        layout="@layout/load_fail_view" />
+</RelativeLayout>

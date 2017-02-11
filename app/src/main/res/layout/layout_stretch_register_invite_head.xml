@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_70"
+    android:background="@color/trans"
+    android:paddingLeft="@dimen/px_20">
+
+    <TextView
+        android:id="@+id/tv_invite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:text="添加邀请码，帮助好友赚取收益"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/layout_stretch_submit_order_head_iv_arrow"
+        android:layout_width="@dimen/px_20"
+        android:layout_height="@dimen/px_20"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_toRightOf="@+id/tv_invite"
+        android:src="@mipmap/btn_main_middle_dn" />
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_80"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/setting_problem"
+            android:background="@drawable/selector_white_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/px_30"
+                android:text="@string/common_problem" />
+
+            <ImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_30"
+                android:padding="@dimen/px_8"
+                android:src="@mipmap/btn_main_middle" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_20"
+            android:background="@color/e_bg"/>
+        <RelativeLayout
+            android:id="@+id/setting_line_us"
+            android:background="@drawable/selector_white_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/px_30"
+                android:text="@string/contact_us" />
+
+            <ImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_30"
+                android:padding="@dimen/px_8"
+                android:src="@mipmap/btn_main_middle" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/d_line"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_height="@dimen/px_1"/>
+        <RelativeLayout
+            android:id="@+id/setting_about_us"
+            android:background="@drawable/selector_white_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/px_30"
+                android:text="@string/about_us" />
+
+            <ImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_30"
+                android:padding="@dimen/px_8"
+                android:src="@mipmap/btn_main_middle" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_20"
+            android:background="@color/e_bg"/>
+        <TextView
+            android:id="@+id/setting_logout"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/logout"
+            android:background="@drawable/selector_white_bg"
+            android:layout_height="@dimen/px_100" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/d_line"
+            android:layout_height="@dimen/px_1"/>
+    </LinearLayout>
+</RelativeLayout>

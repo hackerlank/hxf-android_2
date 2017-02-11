@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.order.InventoryActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_bar2" />
+
+    <com.goodhappiness.widget.refreshlayout.BGARefreshLayout
+        android:id="@+id/inventory_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/px_120"
+        android:layout_marginTop="@dimen/px_80">
+
+        <ListView
+            android:id="@+id/inventory_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ddd"
+            android:dividerHeight="1px"
+            android:scrollbars="none" />
+    </com.goodhappiness.widget.refreshlayout.BGARefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/inventory_rl_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_120"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="#ccc" />
+
+        <View
+            android:id="@+id/center_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:id="@+id/inventory_ll_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center_view"
+            android:layout_marginBottom="@dimen/px_10"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共"
+                android:textColor="@color/gray_666_text" />
+
+            <TextView
+                android:id="@+id/inventory_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_5"
+                android:layout_marginRight="@dimen/px_5"
+                android:text="0"
+                android:textColor="@color/gray_666_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="件商品，总计："
+                android:textColor="@color/gray_666_text" />
+
+            <TextView
+                android:id="@+id/inventory_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/join_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:textColor="@color/gray_666_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/inventory_tv_commit"
+            android:layout_width="@dimen/px_180"
+            android:layout_height="@dimen/px_76"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_15"
+            android:background="@drawable/shape_for_theme_btn"
+            android:gravity="center"
+            android:text="@string/accounting"
+            android:textColor="@color/black_333_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center_view"
+            android:paddingLeft="@dimen/px_15"
+            android:text="@string/lottery_tips"
+            android:textColor="@color/gray_999_text" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inventory_rl_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_120"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="#ccc" />
+
+        <View
+            android:id="@+id/center_view2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/inventory_tv_delete"
+            android:layout_width="@dimen/px_180"
+            android:layout_height="@dimen/px_76"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_15"
+            android:background="@drawable/shape_for_search"
+            android:gravity="center"
+            android:text="@string/delete" />
+
+        <TextView
+            android:id="@+id/inventory_tv_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/center_view2"
+            android:paddingLeft="@dimen/px_80"
+            android:text="@string/cancel_choose"
+            android:textColor="@color/gray_666_text" />
+
+        <TextView
+            android:id="@+id/inventory_tv_delete_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/center_view2"
+            android:paddingLeft="@dimen/px_80"
+            android:text="共选中0件奖品"
+            android:textColor="@color/gray_999_text" />
+
+        <ImageView
+            android:id="@+id/inventory_iv_select"
+            android:layout_width="@dimen/px_35"
+            android:layout_height="@dimen/px_35"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_20"
+            android:layout_marginRight="@dimen/px_15"
+            android:src="@mipmap/ico_click_ndil" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/load_fail_view"
+        android:layout_marginTop="@dimen/px_80" />
+
+    <RelativeLayout
+        android:id="@+id/inventory_rl_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/px_80">
+
+        <ImageView
+            android:layout_width="@dimen/px_300"
+            android:layout_marginTop="@dimen/px_150"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/px_300"
+            android:src="@mipmap/no_lottery_record" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_500"
+            android:layout_centerHorizontal="true"
+            android:text="@string/no_inventory"
+            android:textColor="@color/gray_999_text" />
+        <TextView
+            android:id="@+id/inventory_tv_join"
+            android:layout_width="@dimen/px_320"
+            android:layout_height="@dimen/px_70"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_600"
+            android:background="@drawable/shape_for_theme_btn"
+            android:gravity="center"
+            android:text="@string/go_immediately" />
+    </RelativeLayout>
+</RelativeLayout>

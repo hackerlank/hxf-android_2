@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <com.goodhappiness.widget.ObservableScrollView
+            android:id="@+id/person_sv"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_466">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/bg_img_bnr" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px_80"/>
+
+                    <com.goodhappiness.widget.RoundImageViewByXfermode
+                        android:id="@+id/person_iv_head"
+                        android:layout_width="@dimen/px_160"
+                        android:layout_height="@dimen/px_160"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/px_78"
+                        android:src="@mipmap/loading_default"
+                        tl:strokeColor="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/person_iv_head"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:orientation="vertical">
+
+                        <com.goodhappiness.widget.emoji.EmojiTextView
+                            android:id="@+id/person_tv_name"
+                            app:emojiSize="25sp"
+                            android:singleLine="true"
+                            android:gravity="center"
+                            android:layout_width="@dimen/px_300"
+                            android:ellipsize="end"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                        <TextView
+                            android:id="@+id/person_tv_id"
+                            android:layout_marginTop="@dimen/px_5"
+                            android:layout_width="wrap_content"
+                            android:text="id"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/px_5"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/person_tv_focus_tab"
+                                android:layout_width="wrap_content"
+                                android:paddingLeft="@dimen/px_20"
+                                android:paddingRight="@dimen/px_20"
+                                android:gravity="center_vertical"
+                                android:layout_height="match_parent"
+                                android:text="@string/focus"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/person_tv_focus"
+                                android:layout_width="wrap_content"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/px_10"
+                                android:paddingRight="@dimen/px_10"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="|"
+                                android:textColor="@color/white"/>
+                            <TextView
+                                android:id="@+id/person_tv_fans_tab"
+                                android:layout_width="wrap_content"
+                                android:paddingLeft="@dimen/px_20"
+                                android:paddingRight="@dimen/px_20"
+                                android:gravity="center_vertical"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fans"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/person_tv_fans"
+                                android:layout_width="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_height="match_parent"
+                                android:paddingLeft="@dimen/px_10"
+                                android:paddingRight="@dimen/px_10"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/px_10"
+                            android:layout_gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/person_tv_focus_click"
+                                android:layout_width="@dimen/px_160"
+                                android:layout_height="@dimen/px_50"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/shape_for_yellow"
+                                android:gravity="center"
+                                android:text="@string/focus_status_no"
+                                android:textColor="@color/black_333_text"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/person_tv_chat_click"
+                                android:layout_marginLeft="@dimen/px_20"
+                                android:layout_width="@dimen/px_160"
+                                android:layout_height="@dimen/px_50"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/shape_for_private_chat"
+                                android:gravity="center"
+                                android:text="@string/private_chat"
+                                android:textColor="@color/black_333_text"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/person_rl_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_80"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/trans" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="@dimen/px_10"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/black_333_text" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/trans" />
+
+                        <View
+                            android:layout_width="2px"
+                            android:layout_height="@dimen/px_10"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/black_333_text" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/trans" />
+                        <View
+                            android:layout_width="2px"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/black_333_text"
+                            android:layout_height="@dimen/px_10"/>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@color/trans"/>
+                    </LinearLayout>
+
+                    <com.flyco.tablayout.SlidingTabLayout
+                        android:id="@+id/tl_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px_80"
+                        android:background="@color/trans"
+                        tl:tl_indicator_height="3dp"
+                        tl:tl_custom="true"
+                        tl:tl_tab_space_equal="true"
+                        tl:tl_textSelectColor="@color/black_333_text"
+                        tl:tl_textUnselectColor="@color/gray_999_text"
+                        tl:tl_underline_color="@color/theme_color" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/e_bg"
+                    android:layout_height="@dimen/px_10"/>
+                <com.goodhappiness.widget.DisPatchViewPager
+                    android:id="@+id/vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </com.goodhappiness.widget.ObservableScrollView>
+    <RelativeLayout
+        android:id="@+id/person_rl_top"
+        android:background="@color/e_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80">
+        <ImageView
+            android:id="@+id/common_left"
+            android:layout_width="@dimen/px_260"
+            android:layout_height="@dimen/px_80"
+            android:layout_alignParentLeft="true"
+            android:paddingBottom="@dimen/px_20"
+            android:paddingLeft="@dimen/px_20"
+            android:paddingRight="@dimen/px_198"
+            android:paddingTop="@dimen/px_20"
+            android:src="@mipmap/ico_white_back"
+            android:visibility="visible" />
+        <com.goodhappiness.widget.emoji.EmojiTextView
+            android:id="@+id/person_tv_name_top"
+            app:emojiSize="22sp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_width="@dimen/px_300"
+            android:ellipsize="end"
+            android:layout_height="@dimen/px_80"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/person_rl_hide_tab"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/px_80"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_80"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/trans" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="@dimen/px_10"
+                android:layout_gravity="center_vertical"
+                android:background="@color/black_333_text" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/trans" />
+
+            <View
+                android:layout_width="2px"
+                android:layout_height="@dimen/px_10"
+                android:layout_gravity="center_vertical"
+                android:background="@color/black_333_text" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/trans" />
+            <View
+                android:layout_width="2px"
+                android:layout_gravity="center_vertical"
+                android:background="@color/black_333_text"
+                android:layout_height="@dimen/px_10"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/trans"/>
+        </LinearLayout>
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tl_4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_80"
+            android:background="@color/trans"
+            tl:tl_indicator_height="3dp"
+            tl:tl_tab_space_equal="true"
+            tl:tl_custom="true"
+            tl:tl_textSelectColor="@color/black_333_text"
+            tl:tl_textUnselectColor="@color/gray_999_text"
+            tl:tl_underline_color="@color/theme_color" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/send_flower"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/px_11"
+        android:layout_marginRight="@dimen/px_25"
+        android:padding="@dimen/px_5"
+        android:src="@mipmap/ico_flower_click"
+        android:layout_width="@dimen/px_63"
+        android:layout_height="@dimen/px_57" />
+</RelativeLayout>

@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.goodhappiness"
+        minSdkVersion 17
+        targetSdkVersion 19
+        versionCode 1061
+        versionName "1.6.1"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+    release {
+        minifyEnabled false
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+}
+
+//    sourceSets {
+//        main {
+//            jni.srcDirs = []
+//            jniLibs.srcDirs = ['src/main/libs']
+//        }
+//    }
+//    packagingOptions {
+//        exclude 'AndroidManifest.xml'
+//        exclude 'META-INF/LICENSE.txt'
+//        exclude 'META-INF/NOTICE.txt'
+//    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        checkReleaseBuilds false
+
+        abortOnError false
+    }
+//    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+
+    //    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+
+    //    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
+    compile files('libs/universal-image-loader-1.9.5.jar')//图片第三方库
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':TuSDK')//图SDK
+    provided 'com.google.code.findbugs:annotations:3.0.1'
+    compile project(':FlycoTabLayout_Lib')//顶部滑动Tab
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/alipaySingle-20160825.jar')
+    compile project(':weiboSDK')
+    compile project(':litepal')
+    compile project(':Rong')//融云
+    compile 'org.xutils:xutils:3.3.24'
+    compile 'com.facebook.rebound:rebound:0.3.8'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.nhaarman.listviewanimations:lib-core:3.1.0@aar'
+    compile 'com.github.chrisbanes.photoview:library:1.2.3'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.alibaba:fastjson:1.2.8'
+    compile 'com.qiniu:qiniu-android-sdk:7.1.+'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.googlecode.jinahya:commons-codec-proxies:1.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.youth.banner:banner:1.2.8'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'
+    compile 'com.pnikosis:materialish-progress:1.7'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.linsea:universalvideoview:1.1.0@aar'//视频播放
+    compile 'com.yqritc:recyclerview-flexibledivider:1.4.0'
+
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_80">
+
+        <com.goodhappiness.widget.refreshlayout.BGARefreshLayout
+            android:id="@+id/exchange_record_srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/exchange_record_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/e_bg"
+                android:dividerHeight="@dimen/px_20" />
+        </com.goodhappiness.widget.refreshlayout.BGARefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/exchange_record_ll_no_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/px_400"
+                android:layout_height="@dimen/px_400"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px_100"
+                android:src="@mipmap/no_exchange_record" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px_40"
+                android:text="@string/no_exchange_record" />
+
+            <TextView
+                android:id="@+id/exchange_record_exchange"
+                android:layout_width="@dimen/px_320"
+                android:layout_height="@dimen/px_70"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px_100"
+                android:background="@drawable/shape_for_theme_btn"
+                android:gravity="center"
+                android:text="@string/buy_immediately" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/load_fail_view"
+        android:layout_marginTop="@dimen/px_80" />
+</RelativeLayout>

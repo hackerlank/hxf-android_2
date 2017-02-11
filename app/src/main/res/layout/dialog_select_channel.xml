@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px_5"
+    android:paddingRight="@dimen/px_5" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:background="@color/theme_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_80">
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:src="@mipmap/icon_delete_default"
+                android:padding="@dimen/px_15"
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_80" />
+            <TextView
+                android:id="@+id/tv_add_channel"
+                android:text="@string/add_channel2"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px_20"
+                android:layout_alignParentRight="true"
+                android:textSize="13sp"
+                android:textColor="@color/advert_blue_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_deep" />
+        <ListView
+            android:padding="@dimen/px_2"
+            android:id="@+id/lv_channel"
+            android:layout_margin="@dimen/px_10"
+            android:dividerHeight="1px"
+            android:divider="@color/d_line"
+            android:background="@drawable/shape_for_back_thin_stroke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

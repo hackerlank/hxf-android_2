@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_white_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/layout_list_revelation_iv"
+            android:layout_width="@dimen/px_200"
+            android:layout_height="@dimen/px_200"
+            android:src="@mipmap/img_mrjz"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/px_20" />
+
+        <LinearLayout
+            android:id="@+id/layout_list_revelation_ll_will_reveal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_toRightOf="@+id/layout_list_revelation_iv"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.goodhappiness.widget.emoji.EmojiTextView
+                android:id="@+id/layout_list_revelation_revealed_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:emojiSize="20sp"
+                android:text="幸福券1000张"
+                android:textColor="@color/black_333_text"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/period_"
+                    android:textColor="@color/gray_999_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/layout_list_revelation_revealed_tv_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="303233546"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_list_revelation_ll_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_15"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/px_25"
+                        android:layout_height="@dimen/px_25"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/ico_time" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/px_5"
+                        android:text="@string/revealed_soon"
+                        android:textColor="@color/join_red"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <com.goodhappiness.widget.timer.CountdownView
+                    android:id="@+id/layout_list_revelation_cv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_20"
+                    app:isShowDay="false"
+                    app:isShowHour="true"
+                    app:isShowMillisecond="true"
+                    app:isShowMinute="true"
+                    app:isShowSecond="true"
+                    app:suffixGravity="center"
+                    app:suffixTextColor="@color/join_red"
+                    app:suffixTextSize="28sp"
+                    app:timeTextColor="@color/join_red"
+                    app:timeTextSize="28sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_list_revelation_ll_abnormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_15"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/px_25"
+                        android:layout_height="@dimen/px_25"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/ico_error" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/px_5"
+                        android:text="@string/grow_problem"
+                        android:textColor="@color/join_red"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_5"
+                    android:layout_marginTop="@dimen/px_25"
+                    android:text="@string/lottery_fault_tips"
+                    android:textColor="@color/join_red"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_list_revelation_ll_revealed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_10"
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_toRightOf="@+id/layout_list_revelation_iv"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading_"
+                android:textColor="@color/black_333_text"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="期        号："
+                    android:textColor="@color/gray_999_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/layout_list_revelation_tv_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading_"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/get_user_"
+                    android:textColor="@color/gray_999_text"
+                    android:textSize="12sp" />
+
+                <com.goodhappiness.widget.emoji.EmojiTextView
+                    android:id="@+id/layout_list_revelation_tv_owner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:emojiSize="15sp"
+                    app:isEllipsize="true"
+                    app:length="8"
+                    android:text="@string/loading_"
+                    android:textColor="@color/advert_blue_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/join_count_"
+                    android:textColor="@color/gray_999_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/layout_list_revelation_tv_owner_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading_"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lucky_time_"
+                    android:textColor="@color/gray_999_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/layout_list_revelation_tv_lucky_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading_"
+                    android:textColor="@color/join_red"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reveal_time_"
+                    android:textColor="@color/gray_999_text"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/layout_list_revelation_tv_cal_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading_"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_10" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

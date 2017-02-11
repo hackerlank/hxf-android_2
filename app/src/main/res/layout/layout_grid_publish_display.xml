@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/gallery_iv"
+        android:layout_width="@dimen/px_30"
+        android:layout_height="@dimen/px_30"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true" />
+    <include
+        android:id="@+id/gif_group"
+        layout="@layout/gif_progress_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

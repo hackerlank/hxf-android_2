@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 设置按钮的四个角为弧形 -->
+    <corners android:radius="@dimen/px_6" />
+    <!-- 填充的颜色 -->
+    <solid android:color="@color/e_bg" />
+    <stroke
+        android:width="2px"
+        android:color="@color/gray_999_text" />
+
+</shape>

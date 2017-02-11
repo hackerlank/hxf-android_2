@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="report_china">
+        <item>色情低俗</item>
+        <item>政治敏感</item>
+        <item>违法</item>
+        <item>广告</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="report_english">
+        <item>obscene</item>
+        <item>policy</item>
+        <item>illegal</item>
+        <item>advert</item>
+        <item>other</item>
+    </string-array>
+
+</resources>

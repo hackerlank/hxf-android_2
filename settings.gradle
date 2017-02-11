@@ -1,0 +1,1 @@
+include ':app', ':TuSDK', ':FlycoTabLayout_Lib', ':litepal', ':weiboSDK', ':Rong', ':videoLibrary', ':photoView'

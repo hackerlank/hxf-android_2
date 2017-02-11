@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/selector_white_bg"
+    android:paddingLeft="@dimen/px_20"
+    android:paddingRight="@dimen/px_20"
+    android:paddingTop="@dimen/px_30">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/layout_list_pay_result_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="幸福商城兑换券 1000张"
+            android:textSize="12sp"
+            android:textColor="@color/advert_blue_text" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/layout_list_pay_result_tv_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textSize="12sp"
+                android:textColor="@color/join_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人次"
+                android:textSize="12sp"
+                android:textColor="@color/gray_999_text" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/layout_list_pay_result_tv_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/px_10"
+        android:textColor="@color/gray_999_text"
+        android:text="商品期号： 303245985"/>
+    <RelativeLayout
+        android:id="@+id/layout_list_pay_result_success_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/layout_list_pay_result_tv_codes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_999_text"
+            android:layout_marginRight="@dimen/px_40"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            android:text="抽奖号码：11021303  11021303  11021303  11021303  " />
+        <ImageView
+            android:layout_marginTop="@dimen/px_10"
+            android:layout_width="@dimen/px_18"
+            android:layout_height="@dimen/px_11"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_20"
+            android:src="@mipmap/btn_main_more"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_height="1px"/>
+    <View
+        android:id="@+id/layout_list_pay_result_success_dash"
+        android:layout_width="match_parent"
+        android:layerType="software"
+        android:layout_height="2dp"
+        android:background="@drawable/dash_gray"/>
+</LinearLayout>

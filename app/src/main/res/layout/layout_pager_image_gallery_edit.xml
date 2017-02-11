@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.goodhappiness.widget.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_333_text">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <View
+            android:id="@+id/vv"
+            android:layout_width="5dp"
+            android:layout_height="@dimen/px_40" />
+
+        <include
+            android:id="@+id/gif_group"
+            layout="@layout/gif_progress_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:id="@+id/iv_lock"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/gallery_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <com.goodhappiness.widget.ObservableHorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/gallery_iv_hor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </com.goodhappiness.widget.ObservableHorizontalScrollView>
+    </RelativeLayout>
+</com.goodhappiness.widget.ObservableScrollView>

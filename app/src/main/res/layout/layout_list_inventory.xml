@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_list_inventory_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_20"
+        android:paddingLeft="@dimen/px_20"
+        android:paddingTop="@dimen/px_20">
+
+        <ImageView
+            android:id="@+id/layout_list_inventory_iv_select"
+            android:layout_width="@dimen/px_35"
+            android:layout_height="@dimen/px_35"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px_15"
+            android:src="@mipmap/ico_click_dil"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_20"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/layout_list_inventory_iv"
+                android:layout_width="@dimen/px_150"
+                android:layout_height="@dimen/px_80"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/layout_list_inventory_tv_period"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px_5"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/gray_666_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_200"
+            android:layout_marginLeft="@dimen/px_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/layout_list_car_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black_333_text"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:text="幸福券1000张" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/layout_list_car_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_666_text"
+                    android:textSize="12sp"
+                    android:text="总需1555人,剩余" />
+
+                <TextView
+                    android:id="@+id/layout_list_car_remain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="30"
+                    android:textColor="@color/advert_blue_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_666_text"
+                    android:text="人次" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:textColor="@color/black_333_text"
+                    android:gravity="center_vertical"
+                    android:text="@string/join_count" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/px_250"
+                    android:layout_height="@dimen/px_70"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_30"
+                    android:background="@drawable/shape_for_search">
+
+                    <ImageView
+                        android:id="@+id/layout_list_inventory_iv_sub"
+                        android:layout_width="@dimen/px_70"
+                        android:layout_height="@dimen/px_70"
+                        android:padding="@dimen/px_20"
+                        android:src="@mipmap/ico_btn_reduce" />
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/px_70"
+                        android:background="@color/gray_999_text" />
+
+                    <EditText
+                        android:id="@+id/dialog_add_to_list_cet"
+                        android:layout_width="@dimen/px_90"
+                        android:maxLength="8"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@color/white"
+                        android:textColor="@color/join_red"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/px_70"
+                        android:background="@color/gray_999_text" />
+
+                    <ImageView
+                        android:id="@+id/layout_list_inventory_iv_add"
+                        android:layout_width="@dimen/px_70"
+                        android:layout_height="@dimen/px_70"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/px_20"
+                        android:src="@mipmap/ico_btn_add" />
+                    <View
+                        android:id="@+id/layout_list_inventory_v_hide"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/layout_list_inventory_tv_count_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/join_red"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/px_10"
+        android:textSize="12sp"
+        android:layout_marginLeft="@dimen/px_300"
+        android:text="参与人次需是10的倍数" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/layout_list_inventory_tv_tips"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:textColor="@color/inventory_blue"
+        android:text="本期仅剩40人次可参与，已自动为您调整"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/px_5"
+    android:paddingLeft="@dimen/px_10"
+    android:paddingRight="@dimen/px_10"
+    android:paddingTop="@dimen/px_5">
+
+    <RelativeLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_cover"
+            android:layout_width="@dimen/px_445"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_30"
+            android:paddingBottom="@dimen/px_20"
+            android:background="@drawable/shape_for_redbag_circle">
+
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/trans"
+                android:dividerHeight="0dp"
+                android:layout_marginTop="@dimen/px_140"
+                android:scrollbars="none"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_go_to_redbag_list"
+            android:layout_width="@dimen/px_445"
+            android:layout_height="@dimen/px_90"
+            android:layout_below="@+id/rl_cover"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_30"
+            android:background="@drawable/dotted_black_yellow"
+            android:gravity="center"
+            android:layerType="software"
+            android:text="查看我的红包"
+            android:textColor="@color/black_333_text"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="@dimen/px_650"
+        android:layout_height="@dimen/px_170"
+        android:src="@mipmap/bg_tck2" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/px_60"
+        android:layout_height="@dimen/px_60"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/redbag_close" />
+</RelativeLayout>

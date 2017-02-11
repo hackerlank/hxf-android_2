@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@mipmap/dropdown_anim_00"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_01"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_02"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_03"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_04"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_05"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_06"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_07"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_08"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_010"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_011"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_012"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_013"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_014"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_015"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_016"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_017"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_018"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_019"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_020"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_021"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_022"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_023"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_024"
+        android:duration="60" />
+    <item
+        android:drawable="@mipmap/dropdown_anim_025"
+        android:duration="60" />
+</animation-list>

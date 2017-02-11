@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/e_bg">
+
+    <include layout="@layout/title_bar2" />
+    <ScrollView
+        android:id="@+id/edit_pic_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_80"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/black_333_text"
+                android:layout_height="wrap_content">
+
+                <com.goodhappiness.widget.NoScrollDisPatchViewPager
+                    android:id="@+id/vp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_400"
+                    android:background="@color/black_333_text"
+                    android:paddingBottom="@dimen/px_10"
+                    android:paddingLeft="@dimen/px_10"
+                    android:paddingRight="@dimen/px_10" />
+                <ImageView
+                    android:id="@+id/iv_left"
+                    android:src="@mipmap/ico_left"
+                    android:padding="@dimen/px_10"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/px_80"
+                    android:layout_height="@dimen/px_80" />
+                <ImageView
+                    android:id="@+id/iv_right"
+                    android:src="@mipmap/ico_right"
+                    android:padding="@dimen/px_10"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/px_20"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/px_80"
+                    android:layout_height="@dimen/px_80" />
+                <TextView
+                    android:id="@+id/tv_tips"
+                    android:background="@color/black"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/px_10"
+                    android:paddingRight="@dimen/px_10"
+                    android:paddingBottom="@dimen/px_10"
+                    android:textColor="@color/white"
+                    android:text="@string/please_choose_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_400" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/edit_pic_ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_88"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/floder_ll_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_white_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/floder_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/all_pic"
+                        android:textColor="@color/gray_666_text" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/px_5"
+                        android:src="@mipmap/btn_main_down" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/edit_pic_tv_sticker"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_white_bg"
+                    android:gravity="center"
+                    android:text="@string/lsq_edit_entry_sticker"
+                    android:textColor="@color/gray_999_text" />
+
+                <TextView
+                    android:id="@+id/edit_pic_tv_filter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_white_bg"
+                    android:drawableTop="@null"
+                    android:gravity="center"
+                    android:text="@string/lsq_edit_entry_filter"
+                    android:textColor="@color/gray_999_text" />
+
+            </LinearLayout>
+            <com.goodhappiness.widget.DisPatchGridView
+                android:id="@+id/photo_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/px_10"
+                android:cacheColorHint="@android:color/transparent"
+                android:horizontalSpacing="2dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="2dip" />
+        </LinearLayout>
+    </ScrollView>
+    <View
+        android:id="@+id/v_hide"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/px_300"
+        android:layout_marginTop="@dimen/px_80"/>
+
+    <ViewStub
+        android:id="@+id/floder_stub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout="@layout/fload_list_layout_stub" />
+
+</RelativeLayout>

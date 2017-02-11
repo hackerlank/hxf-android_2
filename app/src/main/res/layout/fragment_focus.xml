@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.goodhappiness.widget.refreshlayout.BGARefreshLayout
+        android:id="@+id/fragment_social_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/fragment_social_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.goodhappiness.widget.refreshlayout.BGARefreshLayout>
+    <LinearLayout
+        android:id="@+id/revelation_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/px_300"
+            android:layout_height="@dimen/px_300"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_220"
+            android:src="@mipmap/img_load_fail" />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/px_40"
+            android:textColor="@color/black_333_text"
+            android:text="@string/data_load_fail" />
+
+        <TextView
+            android:id="@+id/revelation_empty_view_tv_reload"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/px_300"
+            android:layout_height="@dimen/px_60"
+            android:gravity="center"
+            android:background="@drawable/shape_for_theme_btn"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/px_40"
+            android:textColor="@color/black_333_text"
+            android:text="@string/reload" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/revelation_empty_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/px_300"
+            android:layout_height="@dimen/px_300"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_220"
+            android:src="@mipmap/no_charge_record" />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/px_40"
+            android:textColor="@color/black_333_text"
+            android:text="@string/no_data_temporary" />
+
+    </LinearLayout>
+</RelativeLayout>

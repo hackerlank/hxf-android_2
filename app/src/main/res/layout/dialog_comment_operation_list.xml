@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_white_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_comment_operation_list_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_90"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px_10"
+        android:textColor="@color/black_333_text"
+        android:textSize="15sp" />
+</LinearLayout>

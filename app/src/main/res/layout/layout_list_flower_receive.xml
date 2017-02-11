@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_130"
+    android:orientation="vertical">
+
+    <com.goodhappiness.widget.RoundImageViewByXfermode
+        android:id="@+id/iv_head"
+        android:layout_width="@dimen/px_70"
+        android:layout_height="@dimen/px_70"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:src="@mipmap/default_head"
+        app:strokeColor="@color/gray_999_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/px_10"
+        android:layout_toRightOf="@+id/iv_head"
+        android:orientation="vertical">
+
+        <com.goodhappiness.widget.emoji.EmojiTextView
+            app:emojiSize="15sp"
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/px_10"
+            android:text="用户名"
+            android:textColor="@color/black_333_text"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="觉得你很赞，送给你"
+                android:textColor="@color/gray_666_text"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="@dimen/px_30"
+                android:layout_height="@dimen/px_30"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginRight="@dimen/px_10"
+                android:src="@mipmap/ico_flower" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="X"
+                android:textColor="@color/gray_666_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/flower_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_10"
+                android:layout_marginRight="@dimen/px_10"
+                android:text="500"
+                android:textColor="@color/black_333_text"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="时间"
+            android:textColor="@color/gray_999_text"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_1"
+        android:layout_marginLeft="@dimen/px_20"
+        android:layout_marginRight="@dimen/px_20"
+        android:background="@color/d_line" />
+</RelativeLayout>

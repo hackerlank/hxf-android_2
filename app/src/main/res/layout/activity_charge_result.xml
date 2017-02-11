@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_266"
+        android:layout_marginTop="@dimen/px_80"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/charge_result_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_146"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black_333_text"
+            android:gravity="center"
+            android:text=""/>
+        <TextView
+            android:id="@+id/charge_result_back"
+            android:text="@string/back_home"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_for_theme_btn"
+            android:textColor="@color/black_333_text"
+            android:layout_width="@dimen/px_340"
+            android:layout_height="@dimen/px_60" />
+    </LinearLayout>
+    <include
+        android:layout_marginTop="@dimen/px_80"
+        layout="@layout/load_fail_view" />
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/title_bar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px_60"
+        android:orientation="vertical"
+        android:padding="@dimen/px_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_80"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ico_dlu" />
+
+            <com.goodhappiness.widget.ClearEditText
+                android:id="@+id/login_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/px_20"
+                android:background="@color/white"
+                android:hint="@string/input_account"
+                android:inputType="number"
+                android:textColor="@color/black_333_text"
+                android:textColorHint="@color/gray_999_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/d_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_80"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ico_mma" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_80"
+                android:orientation="horizontal">
+
+                <com.goodhappiness.widget.ClearEditText
+                    android:id="@+id/login_et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/px_20"
+                    android:background="@color/white"
+                    android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/input_pwd"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black_333_text"
+                    android:textColorHint="@color/gray_999_text" />
+                <TextView
+                    android:id="@+id/login_tv_forget"
+                    android:layout_weight="2"
+                    android:text="@string/forget_pwd_"
+                    android:textColor="@color/gray_999_text"
+                    android:gravity="center_vertical|right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/d_line" />
+
+        <TextView
+            android:id="@+id/login_tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_70"
+            android:layout_marginTop="@dimen/px_40"
+            android:background="@drawable/shape_for_theme_btn"
+            android:gravity="center"
+            android:text="@string/login" />
+
+        <TextView
+            android:id="@+id/login_tv_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_70"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@drawable/shape_for_black"
+            android:gravity="center"
+            android:text="@string/register_via_phone" />
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/px_60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:background="@color/black_333_text"/>
+            <TextView
+                android:background="@color/white"
+                android:text="其他登录方式"
+                android:paddingLeft="@dimen/px_15"
+                android:paddingRight="@dimen/px_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/px_100"
+            android:layout_marginRight="@dimen/px_100"
+            android:layout_height="@dimen/px_170"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/qq"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:src="@mipmap/ico_share_qq"
+                    android:layout_marginTop="@dimen/px_20"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/px_100"
+                    android:layout_height="@dimen/px_100" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="QQ"
+                    android:textSize="12sp"
+                    android:layout_marginTop="@dimen/px_15"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/wechat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:src="@mipmap/ico_share_wechat"
+                    android:layout_marginTop="@dimen/px_20"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="@dimen/px_100"
+                    android:layout_height="@dimen/px_100" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="微信"
+                    android:textSize="12sp"
+                    android:layout_marginTop="@dimen/px_15"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

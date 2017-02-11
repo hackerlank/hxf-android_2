@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.goodhappiness.ui.fragment.StartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/iv_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/beginning" />
+    <ImageView
+        android:id="@+id/start_to_activity"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/px_100"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/bt_jinru"
+        android:layout_width="@dimen/px_340"
+        android:layout_height="@dimen/px_100" />
+
+
+</RelativeLayout>
